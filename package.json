@@ -1,0 +1,33 @@
+{
+  "name": "react-recux-konva-canvas",
+  "version": "1.0.0",
+  "description": "React + Canvas = Colorfull",
+  "main": "./app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --progress --d --watch --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ga245004/react-recux-konva-canvas.git"
+  },
+  "author": "Gaurav Maheshwari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ga245004/react-recux-konva-canvas/issues"
+  },
+  "homepage": "https://github.com/ga245004/react-recux-konva-canvas#readme",
+  "devDependencies": {
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.29.0",
+    "npm-install-webpack-plugin": "github:webpack-contrib/npm-install-webpack-plugin",
+    "webpack": "^2.2.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "expose-loader": "^0.7.3",
+    "react": "^15.6.1"
+  }
+}
