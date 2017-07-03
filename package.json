@@ -21,7 +21,7 @@
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^2.29.0",
-    "npm-install-webpack-plugin": "github:webpack-contrib/npm-install-webpack-plugin",
+    "npm-install-webpack-plugin": "ga245004/npm-install-webpack-plugin",
     "webpack": "^2.2.0"
   },
   "dependencies": {
