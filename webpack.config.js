@@ -6,7 +6,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 var defaults = require("./webpack.config.defaults"); //default webpack.config for most of development requirements
 
 module.exports = Object.assign({}, defaults, {
-  entry: './app/entry.js',
+  entry: [
+    'babel-polyfill',
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server',
+    './app/entry.js'
+    ],
 
   output: Object.assign({}, defaults.output, {
     filename: 'bundle.js',

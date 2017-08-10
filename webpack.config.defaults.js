@@ -1,5 +1,4 @@
 var NpmInstallPlugin = require("npm-install-webpack-plugin");
-const HelloWorldPlugin = require('./hello-world');
 var path = require("path");
 
 module.exports = {
@@ -18,7 +17,8 @@ module.exports = {
             },
             {
                 test: /\.(jsx)$/,
-                loader: "babel-loader",
+                loader:  'babel-loader' // add this last
+                ,
                 options: {
                     cacheDirectory: true
                 },
@@ -89,8 +89,6 @@ module.exports = {
     },
 
     plugins: [
-
-        new HelloWorldPlugin(),
 
         new NpmInstallPlugin({
             dev: function (module, path) {

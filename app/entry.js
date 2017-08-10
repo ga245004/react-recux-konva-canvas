@@ -1,21 +1,17 @@
-
-
 import React from 'react';
 import { render } from 'react-dom';
 require('jquery');
 
+import { createStore , combineReducers } from 'redux';
+import { Provider } from 'react-redux';
 
-class App extends React.Component{
 
-    constructor(){
-        console.log('App.jsx');
-    }
+var store = require('./redux/reducers/rootReducer').default;
 
-    render(){
-        return <h2>Test</h2>;
-    }
-}
+ var App = require('./App');
+ import { AppContainer } from 'react-hot-loader';
 
-var div = $('<div />').appendTo('body')[0];
-
-render( <App/>, div);
+render( 
+<Provider store={store}> 
+    <App />
+</Provider> , document.getElementById('reactRender'));
